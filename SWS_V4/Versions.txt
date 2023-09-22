@@ -1,0 +1,72 @@
+APFC Version 
+
+V1:
+Base 
+- Inproved APFC Logic
+
+V2:
+-Bug fixing
+
+V5:
+-Added Support for Multiple wifi 
+-Fixed issue in Default SSid
+
+
+V6:
+- Added APFC relay Test Code wity Menu select Button
+- Added feture to show ID and Version during initial Wait time
+- Added RPC getKVRcom()
+- Added repeat for default ssid in switchwifi
+- in Check and sync RTC every 10 MIN, removed Onconnect
+- Fixed issue in server update 
+
+V7:
+- Claer m_KAVRCombinations before loading new values , useful when cap values are changed form three to two.
+- Disabled frame update for KVAH and lead pf
+- Send current value update only when diff is greater than 2, logic to run faults remain same for every 1A drop.
+- switch wifi only when default SSID is 0, other wise reconnect to only default ID
+
+V8:
+- Added support for 9 SSIds _0 to_9
+_ Added validation for KVA >= 0
+
+V50:
+- Special version for 4 Channel APFC Laxhmipathi Raju
+
+V10:
+- Bug fixing
+- KVA limit set, 
+- APFC CAP back selection Fixed
+- New Server link
+
+V14:
+- Bug fixing
+- KVA limit set, 
+- Run APFC Logic depending on Load Type... When Load(C1+C2) is greater than 1 consider C1+C2 else condider PFamp
+- Addred CB healty Cheak, Every day when No load function will check Cap bank and report Fault
+
+V15:
+- Added energy reading KVAh and KWah , and Average PF
+
+V16:
+- APFC enable not allowed if cap values are 0
+- Auto update of current Refrence depending on current value
+- Line Fault Indicator added for App, fault display
+- Neatral Fault
+- Power supply Fault
+
+
+V17:
+- PF refrence set to Defult value 0.99
+- TargetPowerfactor set to default 0.99
+- If all caps are set to 0, and apfc is enabled ny mistake , disable it
+- KvaReference changed to float from U16
+- Added Stabilzation for KVA value
+- Added Support for pcbMake 2.3 with backword Compatibility
+- force check of CAp health is ignored is there is no change in PF amps
+
+V20:
+- Wrote own totalizer for Kwh and KVAh
+- Modified Cap Health check threshold as per voltage
+ 
+
